@@ -1,22 +1,13 @@
-import countries from '../../countries.json';
-import { useState } from 'react';
-import { CountriesList } from '../../Components/CountriesList';
+import { Link } from 'react-router-dom';
 
 export function Home() {
-  const [allCountries, setCountries] = useState(countries);
-
   return (
     <>
-      <div>
-        {allCountries.map((currentElement) => {
-          return (
-            <div>
-              <CountriesList country={currentElement} />
-            </div>
-          );
-        })}
-      </div>
-      ;
+      <Link path to="/">
+        Home |
+      </Link>
+      <Link to="/CountryDetails">CountryDetails | </Link>
+      <Link to="/CountriesList">CountriesList | </Link>
     </>
   );
 }

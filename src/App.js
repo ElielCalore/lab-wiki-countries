@@ -8,11 +8,11 @@ export function App() {
   return (
     <div>
       <NavBar></NavBar>
-      <Home></Home>
+
       <Routes>
-        <Route path={'/'} element={<Home />} />
-        <Route path={'/:CountryDetails'} element={<CountryDetails />} />
-        <Route path={'/:CountriesList'} element={<CountriesList />} />
+        <Route exact path={'/'} element={<Home />} />
+        <Route path={'/CountryDetails'} element={<CountryDetails />} />
+        <Route path={'/CountriesList'} element={<CountriesList />} />
       </Routes>
     </div>
   );

@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
-export function CountryDetails({ country }) {
+export function CountryDetails() {
   return (
     <>
-      <h1>Bem vindo</h1>
+      <h1>CountryDetails</h1>
       <Link to="/">Voltar</Link>
     </>
   );
